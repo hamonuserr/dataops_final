@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: diabetes-service-config
+  namespace: ml-platform
+data:
+  MLFLOW_TRACKING_URI: "http://mlflow-service.ml-platform.svc.cluster.local:5000"
+  MODEL_VERSION: "2"
+  PYTHONUNBUFFERED: "1"
+  LOG_LEVEL: "INFO"

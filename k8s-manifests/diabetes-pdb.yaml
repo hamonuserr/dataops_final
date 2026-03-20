@@ -1,0 +1,10 @@
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: diabetes-service
+  namespace: ml-platform
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels:
+      app: diabetes-service

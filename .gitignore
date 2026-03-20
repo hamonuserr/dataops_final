@@ -1,0 +1,40 @@
+# Data directories (local runtime data)
+postgres_data/
+airflow_postgres_data/
+minio_data/
+lakefs_data/
+mlflow_data/
+mlflow_artifacts/
+jupyterhub_data/
+notebooks/
+
+# Logs
+airflow/logs/
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+jupyterhub_venv/
+
+# OS
+.DS_Store
+.env.local
+.env.*.local
+
+# Symlinks
+airflow/logs/scheduler/latest
