@@ -13,7 +13,7 @@
 
 ### Запуск
 ```bash
-cd test_mlml
+cd dataops_final
 docker-compose up -d
 ```
 
